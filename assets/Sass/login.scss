@@ -1,0 +1,82 @@
+$clr-white: rgb(252, 252, 252);
+$clr-primary: rgb(105, 108, 255);
+$clr-primary-bg: rgba(105, 108, 255, .16);
+$clr-bg-menu : rgb(245,245,249);
+$clr-grayish-blue: hsl(221, 10%, 64%);
+
+a{
+    text-decoration: none;
+    color: $clr-primary;
+    
+}
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    position: relative;
+    margin: .75rem 0;
+    input{
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        border: 2px solid #acacac;
+        background-color: transparent;
+        color: #eee;
+        transition: .15s all ease;
+    }
+    input:focus{
+        border-color: $clr-primary;
+    }
+    input::placeholder{
+        color: transparent;
+    }
+    .form-label{
+        position: absolute;
+        top: 9px;
+        right: 0;
+        padding: 0 .7rem;
+        color: $clr-grayish-blue;
+        pointer-events: none;
+        transition: .15s all ease;
+    }
+    input:focus + .form-label,
+    input:not(:placeholder-shown) +
+    .form-label{
+        transform: translate(-5px, -22px);
+        color: $clr-primary;
+        background-color: $clr-white;
+        border-radius: 10px;
+    }
+}
+
+.icon-menu-primary-color{
+    svg path{
+        fill: $clr-primary;
+    }
+}
+
+
+.btn-submit{
+    background-color: $clr-primary;
+    color: $clr-white;
+    border-style: none;
+    :hover{
+        opacity: .75;
+        transition: all .5s;
+    }
+}
+
+.form-width{
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-grayish-blue{
+    color: $clr-grayish-blue;
+}
+

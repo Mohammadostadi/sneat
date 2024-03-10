@@ -1,0 +1,50 @@
+
+    $clr-primary: rgb(105, 108, 255);
+    $clr-primary-bg: rgba(105, 108, 255, .16);
+    $clr-bg-menu : rgb(245,245,249);
+    $clr-grayish-blue: hsl(221, 10%, 64%);
+.color-grayish-blue{
+    color: $clr-grayish-blue;
+}
+.bg-color-menu-hover:hover{
+    background-color: $clr-bg-menu;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+a{
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+#nav-menu{
+
+    ul{
+        width: 25%;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    ul li{
+        padding: .5rem 1rem;
+    }
+} 
+
+.icon-menu-primary-color {
+    svg path{
+        color: $clr-primary;
+    }
+}
+
+.active-menu{
+    color: $clr-primary;
+    background-color: $clr-primary-bg;
+}
