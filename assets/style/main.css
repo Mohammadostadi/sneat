@@ -174,10 +174,10 @@ ul {
 
 @media (max-width: 426px) {
   .main-header {
-    padding: .5rem 1rem; } }
+    padding: .5rem 1rem; }
+  .mobile-p-0 {
+    padding: 0 !important; } }
 
 @media (max-width: 376px) {
   .main-header {
-    padding: .5rem 0; }
-  .mobile-p-0 {
-    padding: 0 !important; } }
+    padding: .5rem 0; } }

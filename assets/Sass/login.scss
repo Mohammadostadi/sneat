@@ -1,14 +1,14 @@
-$clr-white: rgb(252, 252, 252);
+/* $clr-white: rgb(252, 252, 252);
 $clr-primary: rgb(105, 108, 255);
 $clr-primary-bg: rgba(105, 108, 255, .16);
 $clr-bg-menu : rgb(245,245,249);
 $clr-grayish-blue: hsl(221, 10%, 64%);
-$clr-dark: rgb(0, 0, 0);
+$clr-dark: rgb(0, 0, 0); */
 $clr-face-book:#4267b22c;
 $clr-twitter:#1da0f244;
 $clr-git-hub:#2727273b;
 $clr-google:#db45372e;
-
+@use 'main';
 a{
     text-decoration: none;
     color: $clr-primary;
