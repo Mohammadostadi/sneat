@@ -2,8 +2,8 @@ $clr-grayish-blue: hsl(221, 10%, 64%);
 $clr-white: rgb(252, 252, 252);
 $clr-primary: rgb(105, 108, 255);
 .main-sec-icon{
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
     margin: .5rem 1rem;
     .icon{
         display: flex;

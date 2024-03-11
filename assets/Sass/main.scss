@@ -32,27 +32,9 @@ ul{
 }
 
 #nav-menu{
-    ::-webkit-scrollbar {
-        width: 4px;
-        transition: all .5s;
-    }
-    
-    
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: $clr-grayish-blue; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: $clr-gray; 
-    }
 
     ul{
+        /* margin: .5rem 0; */
         padding: .5rem;
         border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -70,30 +52,11 @@ ul{
     }
 } 
 
-#main-sec{
-    ::-webkit-scrollbar {
-        width: 4px;
-        transition: all .5s;
-    }
-    
-    
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: $clr-grayish-blue; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: $clr-gray; 
-    }
-    width: 75%;
+/* #main-sec{ */
+/*     width: 75%;
     position: fixed;
     right: 25%;
-}
+} */
 
 .icon-menu-primary-color {
     svg path{
@@ -134,34 +97,15 @@ ul{
 }
 
 .pop-up{
-    /* ::-webkit-scrollbar {
-        width: 4px;
-        transition: all .5s;
-    }
-    
-    
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background: $clr-grayish-blue; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: $clr-gray; 
-    } */
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
     background-color: $clr-white;
     border-radius: .3rem;
     box-shadow: .2rem .2rem 1.5rem .001rem;
     transition: all 1.5s;
     min-width: 250px;
     ul{
+            height: 100vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
         list-style: none;
         margin: .5rem 1rem 1rem 0;
     }
@@ -175,6 +119,25 @@ ul{
     ul li{
         margin: .5rem 1rem;
     }
+}
+::-webkit-scrollbar {
+    width: 4px;
+    transition: all .5s;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $clr-grayish-blue; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $clr-gray; 
 }
 
 .show{
