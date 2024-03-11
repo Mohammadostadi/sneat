@@ -1,0 +1,25 @@
+$clr-grayish-blue: hsl(221, 10%, 64%);
+$clr-white: rgb(252, 252, 252);
+$clr-primary: rgb(105, 108, 255);
+.main-sec-icon{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: .5rem 1rem;
+    .icon{
+        display: flex;
+        flex-wrap: wrap;
+        margin: .5rem 1rem;
+    }
+    .icon span{
+        padding: .75rem 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius:10px ;
+        margin: .5rem;
+        color: $clr-grayish-blue;
+    }
+    .btn-show a{
+        text-decoration: none;
+        color: $clr-white;
+        background-color: $clr-primary;
+    }
+}

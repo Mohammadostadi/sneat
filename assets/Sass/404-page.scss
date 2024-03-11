@@ -1,7 +1,7 @@
-/* $clr-gray: hsla(240, 6%, 10%, 0.693);
+$clr-gray: hsla(240, 6%, 10%, 0.693);
 $clr-white: rgb(252, 252, 252);
-$clr-primary: rgb(105, 108, 255); */
-@use 'main';
+$clr-primary: rgb(105, 108, 255);
+
 .main-page{
     display: flex;
     justify-content: center;

@@ -1,0 +1,18 @@
+.main-sec-icon {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: .5rem 1rem; }
+  .main-sec-icon .icon {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5rem 1rem; }
+  .main-sec-icon .icon span {
+    padding: .75rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin: .5rem;
+    color: #9aa0ac; }
+  .main-sec-icon .btn-show a {
+    text-decoration: none;
+    color: #fcfcfc;
+    background-color: #696cff; }
