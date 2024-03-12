@@ -1,0 +1,46 @@
+$box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$clr-grayish-blue: hsl(216, 14%, 85%);
+$clr-white: rgb(252, 252, 252);
+$clr-primary: rgb(105, 108, 255);
+$clr-gray: hsl(240, 4%, 36%);
+
+
+.form-sec{
+    margin: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
+    div form{
+        padding: 1rem 1.5rem;
+        width: 100%;
+        box-shadow: $box-shadow;
+    }
+    div form div input{
+        border-style: none;
+        border: 1px solid $clr-grayish-blue;
+    }
+}
+
+input:focus{
+    border-color: $clr-primary !important;
+}
+
+.link-form{
+    margin: .5rem; 
+    padding: .5rem 1rem;
+    color: $clr-white;
+    background-color: $clr-primary;
+    cursor: pointer;
+}
+.reset{
+    color: $clr-gray;
+    background-color: $clr-grayish-blue;
+}
+
+
+.form-svg{
+    position: relative;
+    svg{
+        position: absolute;
+        top: 20px;
+        right: -10px;
+    }
+}

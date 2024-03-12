@@ -16,9 +16,7 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 }
 
 body{
-    font-family: 'iranian-sans-thin', 'iranian-sans', 'yekan-thin', 'yekan';
-}
-
+    font-family: 'iranian-sans-thin', 'iranian-sans', 'yekan-thin', 'yekan';}
 
 a{
     text-decoration: none;
@@ -100,11 +98,6 @@ a svg{
     background-color: $clr-grayish-blue;
 }
 
-.icon-menu-primary-color{
-    svg path{
-        fill: $clr-primary;
-    }
-}
 
 
 .btn-submit{

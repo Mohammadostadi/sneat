@@ -5,13 +5,21 @@
     $clr-grayish-blue: hsl(221, 10%, 64%);
     $clr-gray: hsla(240, 6%, 10%, 0.693);
     $clr-dark: rgb(0, 0, 0);
+    $box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     $font-bold:'iranian-sans-bold', 'yekan-bold';
     @import url(../style/font.css);
+    @import '404-page';
+    @import 'form';
+    @import 'icon';
+    @import 'login';
+    @import 'register';
+    @import 'typography';
+    @import 'table';    
     .font-bold{
         font-family: $font-bold;
     }
 .color-grayish-blue{
-    color: $clr-grayish-blue;
+    color: $clr-grayish-blue !important;
 }
 .bg-color-menu-hover:hover{
     background-color: $clr-bg-menu;
@@ -31,6 +39,7 @@ body{
 
 a{
     text-decoration: none;
+    background-color: transparent;
 }
 
 ul{
