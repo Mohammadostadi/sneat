@@ -15,11 +15,14 @@ function showEye(){
 }
 
 var popUps = document.getElementById('pop-ups');
+var AvatarImg = document.getElementById('avatars-img')
 
 function showPopUp(){
         popUps.classList.add("show")
-}
-
-function closePopUp(){
-    popUps.classList.remove("show")
+        AvatarImg.classList.add("z-index-1")
+    }
+    
+    function closePopUp(){
+        popUps.classList.remove("show")
+        AvatarImg.classList.remove("z-index-1")
 }
