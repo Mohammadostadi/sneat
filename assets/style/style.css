@@ -362,6 +362,9 @@ a svg {
 .bg-color-gray {
   background-color: rgba(227, 231, 236, 0.813); }
 
+.bg-color-primary {
+  background-color: rgba(191, 192, 254, 0.57); }
+
 /* .txt-dark{
     color: $clr-dark;
 } */
@@ -469,9 +472,22 @@ a svg {
   display: flex; }
   .roaster-div div div a {
     padding: .5rem;
-    border-radius: 10px;
-    transition: all .5s; }
+    transition: all 0.5s;
+    border-radius: 10px; }
   .roaster-div div div a:hover {
+    background-color: rgba(217, 217, 217, 0.724); }
+
+.influencer--main-txt-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  padding: 1rem 1.5rem; }
+  .influencer--main-txt-div a {
+    padding: .5rem;
+    transition: all 0.5s;
+    border-radius: 10px; }
+  .influencer--main-txt-div a:hover {
     background-color: rgba(217, 217, 217, 0.724); }
 
 .z-index-1 {
@@ -496,6 +512,30 @@ a svg {
 
 .border-space-icon {
   border-left: 1px solid rgba(217, 217, 217, 0.724); }
+
+.best-answer-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  padding: 1rem 1.5rem; }
+  .best-answer-div div a {
+    padding: .5rem;
+    transition: all 0.5s;
+    border-radius: 10px; }
+  .best-answer-div div a:hover {
+    background-color: rgba(217, 217, 217, 0.724); }
+
+.support-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  padding: 1rem 1.5rem; }
+  .support-div a {
+    padding: .5rem 1rem;
+    color: #fcfcfc;
+    background-color: #696cff; }
 
 /* .iphone-empty-div::after{
     content: "";
