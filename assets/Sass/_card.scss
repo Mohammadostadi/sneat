@@ -2,6 +2,7 @@ $clr-gray: hsla(0, 0%, 85%, 0.724);
 $clr-grayish-blue: hsl(221, 10%, 64%);
 $clr-white: rgb(252, 252, 252);
 $clr-primary: rgb(105, 108, 255);
+$clr-bg-gray: rgba(227, 231, 236, 0.813);
 /* $clr-dark: rgb(0, 0, 0); */
 $box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 $font-bold:'iranian-sans-bold', 'yekan-bold';
@@ -11,6 +12,11 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
     border-radius: 10px;
     /* padding: 1rem; */
 }
+
+.bg-color-gray{
+    background-color: $clr-bg-gray;
+}
+
 /* .txt-dark{
     color: $clr-dark;
 } */
@@ -145,6 +151,20 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
     @include theme();
 }
 
+.lifetime-div{
+    @include theme();
+    display: flex;
+}
+
+.border-for-div{
+    border-top: 1px solid $clr-gray;
+    padding: 1rem 0;
+}
+
+.border-space-icon{
+    border-left: 1px solid $clr-gray;
+}
+
 /* .iphone-empty-div::after{
     content: "";
     position: absolute;
@@ -227,6 +247,15 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
     }
     .order-medium-2{
         order: 2 !important;
+    }
+    .lifetime-div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-display-lifetime{
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -359,6 +359,9 @@ a svg {
   color: #d400ff; }
 
 /* $clr-dark: rgb(0, 0, 0); */
+.bg-color-gray {
+  background-color: rgba(227, 231, 236, 0.813); }
+
 /* .txt-dark{
     color: $clr-dark;
 } */
@@ -480,6 +483,20 @@ a svg {
   border-radius: 10px;
   /* padding: 1rem; */ }
 
+.lifetime-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  display: flex; }
+
+.border-for-div {
+  border-top: 1px solid rgba(217, 217, 217, 0.724);
+  padding: 1rem 0; }
+
+.border-space-icon {
+  border-left: 1px solid rgba(217, 217, 217, 0.724); }
+
 /* .iphone-empty-div::after{
     content: "";
     position: absolute;
@@ -541,7 +558,14 @@ a svg {
   .order-medium-1 {
     order: 1 !important; }
   .order-medium-2 {
-    order: 2 !important; } }
+    order: 2 !important; }
+  .lifetime-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .mobile-display-lifetime {
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 1150px) {
   .star-width {
