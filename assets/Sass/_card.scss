@@ -155,6 +155,16 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
     @include theme();
 }
 
+.link-border-apple-watch{
+    border-radius: 0 0 10px 10px;
+}
+.image-border-div{
+    border-radius: 10px 10px 0 0;
+}
+.border-div{
+    border-radius:10px 0 0 10px ; 
+}
+
 .lifetime-div{
     @include theme();
     display: flex;
@@ -188,6 +198,20 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
         background-color: $clr-primary;
         
     }
+}
+
+
+
+
+.navigation-card-sec{
+    padding: 1rem 1.5rem;
+}
+
+
+
+
+.solid-card-sec{
+    padding: 1rem 1.5rem;
 }
 /* .iphone-empty-div::after{
     content: "";
@@ -281,6 +305,9 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
         justify-content: center;
         align-items: center;
     }
+    .border-div{
+        border-radius: 10px 10px 0 0 !important;
+    }
 }
 
 @media(max-width: 1150px){
@@ -288,3 +315,67 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+/* nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 12px 12px 0px 0px;
+    overflow: hidden;
+  } */
+  label[class="star"] {
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+  }
+  .content input[type="radio"] {
+    display: none;
+  }
+  
+  #like:checked ~ nav .like,
+  #star:checked ~ nav .star,
+  #setting:checked ~ nav .setting {
+    color: #fff;
+  }
+  #like:checked ~ nav .indiacator {
+    right: 0;
+  }
+  #star:checked ~ nav .indiacator {
+    right: 130px;
+  }
+  #setting:checked ~ nav .indiacator {
+    right: 266px;
+  }
+  .txt-content .txt {
+    display: none;
+  }
+  .txt-content .home {
+    display: block;
+  }
+  
+  #like:checked ~ .txt-content .like,
+  #star:checked ~ .txt-content .star,
+  #setting:checked ~ .txt-content .setting {
+    display: block;
+  }
+  
+  #star:checked ~ .txt-content .like,
+  #setting:checked ~ .txt-content .like {
+    display: none;
+  }
+  .txt-content {
+    padding: 20px;
+    height: 150px;
+  }
+  .txt-content .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
