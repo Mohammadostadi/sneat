@@ -4,6 +4,9 @@ $clr-white: rgb(252, 252, 252);
 $clr-primary: rgb(105, 108, 255);
 $clr-bg-primary: rgba(191, 192, 254, 0.57);
 $clr-bg-gray: rgba(227, 231, 236, 0.813);
+$clr-face-book: rgb(59, 89, 152);
+$clr-linkedin: rgb(0, 123, 182);
+$clr-twitter: rgb(22, 177, 255);
 /* $clr-dark: rgb(0, 0, 0); */
 $box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 $font-bold:'iranian-sans-bold', 'yekan-bold';
@@ -213,6 +216,30 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 .solid-card-sec{
     padding: 1rem 1.5rem;
 }
+
+.solid-card-div{
+    @include theme();
+}
+
+@mixin solidCard(){
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    color: $clr-white;
+}
+.twitter-card /* + .face-book-card + .linkedin-card */{
+    @include solidCard();
+    background-color: $clr-twitter;
+}
+.face-book-card{
+    @include solidCard();
+    background-color: $clr-face-book;
+}
+.linkedin-card{
+    @include solidCard();
+    background-color: $clr-linkedin;
+}
+
 /* .iphone-empty-div::after{
     content: "";
     position: absolute;

@@ -1,0 +1,145 @@
+$clr-white: rgb(252, 252, 252);
+$clr-primary: rgb(105, 108, 255);
+$clr-dark: rgb(0, 0, 0);
+$clr-green: rgb(113, 221, 55);
+$clr-bg-green: rgba(113, 221, 55, 0.365);
+$clr-little-blue: rgba(3, 193, 236, 0.266);
+$clr-primary-bg: rgba(105, 108, 255, .16);
+$clr-gray-solid: rgba(133, 146, 163, 0.352);
+$box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$font-bold:'iranian-sans-bold', 'yekan-bold';
+$clr-gray: hsla(0, 0%, 85%, 0.724);
+
+@mixin theme(){
+    box-shadow: $box-shadow;
+    width: 100%;
+    border-radius: 10px;
+    /* padding: 1rem; */
+}
+
+.color-primary{
+    color: $clr-primary !important;
+}
+.bg-gray{
+    background-color: $clr-gray-solid;
+}
+.bg-green{
+    background-color: $clr-bg-green;
+}
+.bg-color-little-blue{
+    background-color: $clr-little-blue;
+}
+
+.txt-color{
+    color: $clr-grayish-blue;
+}
+
+.dashboard-sec{
+    padding: 1rem 1.5rem;
+}
+.john-dash-div{
+    @include theme();
+    h3{
+        color: $clr-primary;
+    }
+}
+
+.john-dash-txt-div{
+    padding: 1rem 1.5rem;
+    a{
+        padding: .5rem 1rem;
+        background-color: $clr-bg-primary;
+        border-radius: 10px;
+    }
+}
+
+
+.charts-div{
+    @include theme();  
+    div{
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+#chart{
+    overflow-x: scroll;
+}
+
+.profit-div{
+    @include theme();
+}
+
+.payment-div{
+    @include theme();
+}
+
+.sale-div{
+    @include theme();
+}
+
+.transaction-div{
+    @include theme();
+}
+
+
+.profile-report-div{
+    @include theme();
+    display: flex;
+    justify-content: space-around;
+}
+
+#chart{
+    border-left: 1px solid;
+    border-color: $clr-gray;
+}
+
+
+.order-report-div{
+    @include theme();
+    padding: 1rem 1.5rem;
+}
+
+.transactions-div{
+    @include theme();
+    padding: 1rem 1.5rem;
+}
+
+
+.txt-font-size{
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+}
+
+
+@media(max-width: 768px){
+    .john-dash-div{
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        .john-dash-txt-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .order-small-1{
+        order: 1 !important;
+    }
+    .order-small-2{
+        order: 2 !important;
+    }
+    .charts-div{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    #chart{
+        border-style: none !important;
+        overflow-x: hidden !important;
+    }
+    .profile-report-div{
+        flex-direction: column;
+        align-items: center;
+    }
+}

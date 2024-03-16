@@ -552,6 +552,33 @@ a svg {
 .solid-card-sec {
   padding: 1rem 1.5rem; }
 
+.solid-card-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+
+.twitter-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: #fcfcfc;
+  background-color: #16b1ff; }
+
+.face-book-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: #fcfcfc;
+  background-color: #3b5998; }
+
+.linkedin-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  color: #fcfcfc;
+  background-color: #007bb6; }
+
 /* .iphone-empty-div::after{
     content: "";
     position: absolute;
@@ -681,6 +708,129 @@ label[class="star"] {
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px; }
+
+.color-primary {
+  color: #696cff !important; }
+
+.bg-gray {
+  background-color: rgba(133, 146, 163, 0.352); }
+
+.bg-green {
+  background-color: rgba(113, 221, 55, 0.365); }
+
+.bg-color-little-blue {
+  background-color: rgba(3, 193, 236, 0.266); }
+
+.txt-color {
+  color: #9aa0ac; }
+
+.dashboard-sec {
+  padding: 1rem 1.5rem; }
+
+.john-dash-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+  .john-dash-div h3 {
+    color: #696cff; }
+
+.john-dash-txt-div {
+  padding: 1rem 1.5rem; }
+  .john-dash-txt-div a {
+    padding: .5rem 1rem;
+    background-color: rgba(191, 192, 254, 0.57);
+    border-radius: 10px; }
+
+.charts-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+  .charts-div div {
+    border-radius: 0 10px 10px 0; }
+
+#chart {
+  overflow-x: scroll; }
+
+.profit-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+
+.payment-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+
+.sale-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+
+.transaction-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */ }
+
+.profile-report-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  display: flex;
+  justify-content: space-around; }
+
+#chart {
+  border-left: 1px solid;
+  border-color: rgba(217, 217, 217, 0.724); }
+
+.order-report-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  padding: 1rem 1.5rem; }
+
+.transactions-div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  border-radius: 10px;
+  /* padding: 1rem; */
+  padding: 1rem 1.5rem; }
+
+.txt-font-size {
+  display: flex;
+  align-items: center;
+  font-size: .75rem; }
+
+@media (max-width: 768px) {
+  .john-dash-div {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important; }
+    .john-dash-div .john-dash-txt-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+  .order-small-1 {
+    order: 1 !important; }
+  .order-small-2 {
+    order: 2 !important; }
+  .charts-div {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important; }
+  #chart {
+    border-style: none !important;
+    overflow-x: hidden !important; }
+  .profile-report-div {
+    flex-direction: column;
+    align-items: center; } }
 
 .font-bold {
   font-family: "iranian-sans-bold", "yekan-bold"; }
