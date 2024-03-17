@@ -27,6 +27,62 @@ function showPopUp(){
         AvatarImg.classList.remove("z-index-1")
 }
 
+
+
+var account = document.getElementById('account');
+  var linkAccount = document.getElementById('link-account');
+  var security = document.getElementById('security');
+  var linkSecurity = document.getElementById('link-security');
+  var notification = document.getElementById('notification');
+  var linkNotification = document.getElementById('link-notification');
+
+  function showAccount(){
+    account.classList.add('active-div');
+    security.classList.add('non-active-div');
+    notification.classList.add('non-active-div');
+    linkAccount.classList.add('active-link');
+    linkSecurity.classList.add('non-active-link');
+    linkNotification.classList.add('non-active-link');
+    account.classList.remove('non-active-div');
+    security.classList.remove('active-div');
+    notification.classList.remove('active-div');
+    linkAccount.classList.remove('non-active-link');
+    linkSecurity.classList.remove('active-link');
+    linkNotification.classList.remove('active-link');
+  }
+  function showSecurity(){
+    account.classList.add('non-active-div');
+    security.classList.add('active-div');
+    notification.classList.add('non-active-div');
+    linkAccount.classList.add('non-active-link');
+    linkSecurity.classList.add('active-link');
+    linkNotification.classList.add('non-active-link');
+    account.classList.remove('active-div');
+    security.classList.remove('non-active-div');
+    notification.classList.remove('active-div');
+    linkAccount.classList.remove('active-link');
+    linkSecurity.classList.remove('non-active-link');
+    linkNotification.classList.remove('active-link');
+  }
+  function showNotification(){
+    account.classList.add('non-active-div');
+    security.classList.add('non-active-div');
+    notification.classList.add('active-div');
+    linkAccount.classList.add('non-active-link');
+    linkSecurity.classList.add('non-active-link');
+    linkNotification.classList.add('active-link');
+    account.classList.remove('active-div');
+    security.classList.remove('active-div');
+    notification.classList.remove('non-active-div');
+    linkAccount.classList.remove('active-link');
+    linkSecurity.classList.remove('active-link');
+    linkNotification.classList.remove('non-active-link');
+  }
+
+  
+
+
+
 document.addEventListener('DOMContentLoaded', function (){
     const chart = Highcharts.chart('chart', {
         chart: {
@@ -133,3 +189,6 @@ var options = {
   /* document.addEventListener('DOMContentLoaded', function (){
     
   }) */
+
+
+  
