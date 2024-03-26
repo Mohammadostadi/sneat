@@ -14,9 +14,16 @@
 .border-bottom-upload-div{
     border-bottom: 1px solid $clr-bg-gray;
 }
+.list-style-ul{
+    list-style: inside;
+}
 
+.api-sec-list{
+    padding: 1rem 1.5rem;
+    background-color: $clr-bg-gray;
+}
 
-@media(max-width: 475px){
+@media(max-width: 512px){
     .border-link-div{
         a{
             padding: .5rem 0 !important;
@@ -29,5 +36,19 @@
         a{
             margin: .2rem 0 !important;
         }
+    }
+    .form-group{
+        display: flex;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+    .div-moble-flex{
+        flex-direction: column;
+    }
+    .moblie-image-css-padding{
+        padding: .75rem 0 !important;
+    }
+    .mobile-div-100{
+        width: 100%;
     }
 }

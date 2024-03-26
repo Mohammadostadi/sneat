@@ -233,7 +233,7 @@
                         <div class="account-sec">
                             <h5>اطلاعات اکانت </h5>
                             <div class="my-2 d-flex border-bottom-upload-div">
-                                <div class="m-2">
+                                <div class="m-2 moblie-image-css-padding">
                                     <img width="100px" height="100px" class=" image-css rounded" src="public/images/avatar-1-19a9226d.png" alt="">
                                 </div>
                                 <div class="d-flex flex-column justify-content-center">
@@ -306,9 +306,128 @@
                             </div>
                     </div>
                     </div>
-                    <div id="security" class="non-active-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default iconify iconify--custom" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" d="M17.551 3h-10.8a3.6 3.6 0 00-3.6 3.6v10.8a3.6 3.6 0 003.6 3.6h10.8a3.6 3.6 0 003.6-3.6V6.6a3.6 3.6 0 00-3.6-3.6Z"></path><path fill="#fff" d="m8.636 11.567-.102-.095-.102.095-.883.817-.118.11.118.11 2.94 2.721.101.094.102-.094 6.061-5.611.12-.11-.12-.11-.883-.818-.101-.094-.102.094-5.077 4.7-1.954-1.81Z"></path></g></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default iconify iconify--custom" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M6.79 3.75h10.422a3.04 3.04 0 013.039 3.04v10.42a3.04 3.04 0 01-3.04 3.04H6.792a3.04 3.04 0 01-3.04-3.04V6.79a3.04 3.04 0 013.04-3.04Z"></path></svg>
+                    <div id="security" class="non-active-div d-flex flex-column w-100">
+                        <div class="account-sec">
+                            <h5>تغییر پسورد</h5>
+                            <div class="d-flex flex-column">
+                                <div>
+                                    <div class="form-group col-6 mx-1">
+                                        <input class="w-100" type="password" placeholder="رمز" name="psw">
+                                        <label for="psw" class="form-label"><b>رمز فعلی</b></label>
+                                        <span onclick="showEye()">
+                                            <svg class="d-none" id="show-eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="button" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default v-icon--clickable iconify iconify--bx" aria-label="Password appended action" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3c1.641 0 3-1.358 3-3c0-1.641-1.359-3-3-3z"></path><path fill="currentColor" d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316l-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5c-.504 1.158-2.578 5-7.926 5z"></path></svg>
+                                            <svg id="hide-eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="button" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default v-icon--clickable iconify iconify--bx" aria-label="Password appended action" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19c.946 0 1.81-.103 2.598-.281l-1.757-1.757c-.273.021-.55.038-.841.038c-5.351 0-7.424-3.846-7.926-5a8.642 8.642 0 0 1 1.508-2.297L4.184 8.305c-1.538 1.667-2.121 3.346-2.132 3.379a.994.994 0 0 0 0 .633C2.073 12.383 4.367 19 12 19zm0-14c-1.837 0-3.346.396-4.604.981L3.707 2.293L2.293 3.707l18 18l1.414-1.414l-3.319-3.319c2.614-1.951 3.547-4.615 3.561-4.657a.994.994 0 0 0 0-.633C21.927 11.617 19.633 5 12 5zm4.972 10.558l-2.28-2.28c.19-.39.308-.819.308-1.278c0-1.641-1.359-3-3-3c-.459 0-.888.118-1.277.309L8.915 7.501A9.26 9.26 0 0 1 12 7c5.351 0 7.424 3.846 7.926 5c-.302.692-1.166 2.342-2.954 3.558z"></path></svg>
+                                        </span> 
+                                    </div>
+                                </div>
+                                <div class="d-flex div-moble-flex">
+                                    <div class="form-group w-100 mx-1">
+                                        <input class="w-100" type="password" placeholder="رمز" name="psw">
+                                        <label for="psw" class="form-label"><b>رمز جدید</b></label>
+                                        <span onclick="showEye()">
+                                            <svg class="d-none" id="show-eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="button" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default v-icon--clickable iconify iconify--bx" aria-label="Password appended action" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3c1.641 0 3-1.358 3-3c0-1.641-1.359-3-3-3z"></path><path fill="currentColor" d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316l-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5c-.504 1.158-2.578 5-7.926 5z"></path></svg>
+                                            <svg id="hide-eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="button" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default v-icon--clickable iconify iconify--bx" aria-label="Password appended action" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19c.946 0 1.81-.103 2.598-.281l-1.757-1.757c-.273.021-.55.038-.841.038c-5.351 0-7.424-3.846-7.926-5a8.642 8.642 0 0 1 1.508-2.297L4.184 8.305c-1.538 1.667-2.121 3.346-2.132 3.379a.994.994 0 0 0 0 .633C2.073 12.383 4.367 19 12 19zm0-14c-1.837 0-3.346.396-4.604.981L3.707 2.293L2.293 3.707l18 18l1.414-1.414l-3.319-3.319c2.614-1.951 3.547-4.615 3.561-4.657a.994.994 0 0 0 0-.633C21.927 11.617 19.633 5 12 5zm4.972 10.558l-2.28-2.28c.19-.39.308-.819.308-1.278c0-1.641-1.359-3-3-3c-.459 0-.888.118-1.277.309L8.915 7.501A9.26 9.26 0 0 1 12 7c5.351 0 7.424 3.846 7.926 5c-.302.692-1.166 2.342-2.954 3.558z"></path></svg>
+                                        </span> 
+                                    </div>
+                                    <div class="form-group w-100 mx-1">
+                                        <input class="w-100" type="password" placeholder="رمز" name="psw">
+                                        <label for="psw" class="form-label"><b>تایید رمز جدید</b></label>
+                                        <span onclick="showEye()">
+                                            <svg class="d-none" id="show-eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="button" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default v-icon--clickable iconify iconify--bx" aria-label="Password appended action" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3c1.641 0 3-1.358 3-3c0-1.641-1.359-3-3-3z"></path><path fill="currentColor" d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316l-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5c-.504 1.158-2.578 5-7.926 5z"></path></svg>
+                                            <svg id="hide-eye" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="button" tag="i" class="v-icon notranslate v-theme--light v-icon--size-default v-icon--clickable iconify iconify--bx" aria-label="Password appended action" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19c.946 0 1.81-.103 2.598-.281l-1.757-1.757c-.273.021-.55.038-.841.038c-5.351 0-7.424-3.846-7.926-5a8.642 8.642 0 0 1 1.508-2.297L4.184 8.305c-1.538 1.667-2.121 3.346-2.132 3.379a.994.994 0 0 0 0 .633C2.073 12.383 4.367 19 12 19zm0-14c-1.837 0-3.346.396-4.604.981L3.707 2.293L2.293 3.707l18 18l1.414-1.414l-3.319-3.319c2.614-1.951 3.547-4.615 3.561-4.657a.994.994 0 0 0 0-.633C21.927 11.617 19.633 5 12 5zm4.972 10.558l-2.28-2.28c.19-.39.308-.819.308-1.278c0-1.641-1.359-3-3-3c-.459 0-.888.118-1.277.309L8.915 7.501A9.26 9.26 0 0 1 12 7c5.351 0 7.424 3.846 7.926 5c-.302.692-1.166 2.342-2.954 3.558z"></path></svg>
+                                        </span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="txt-color">الزامات پسورد:</h5>
+                            <ul class="list-style-ul txt-color">
+                                <li>
+                                    حداقل 8 کاراکتر - هر چه بیشتر باشد، بهتر است
+                                </li>
+                                <li>
+                                    حداقل یک نویسه کوچک
+                                </li>
+                                <li>
+                                    حداقل یک عدد، نماد یا نویسه فضای خالی
+                                </li>
+                            </ul>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <a class="link-form rounded href="">ذخیره اطلاعات</a>
+                                    <a class="link-form reset rounded href="">تنظیم مجدد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-sec my-2">
+                            <h5 class="mb-2">تایید دو مرحله ای</h5>
+                            <p class="my-2">احراز هویت دو عاملی هنوز فعال نشده است.</p>
+                            <p class="my-2"> احراز هویت دو مرحله ای با نیاز به بیش از یک رمز عبور برای ورود به حساب شما، یک لایه امنیتی اضافی به حساب شما اضافه می کند.<a class="color-primary">اطلاعات بیشتر</a></p>
+                            <div class="w-100 my-3">
+                                <a class="link-form rounded"> فعال کردن</a>
+                            </div>
+                        </div>
+                        <div class="account-sec my-2">
+                            <h5 class="mb-4">یک کلید API ایجاد کنید</h5>
+                            <div class="form-group col-6">
+                                <select class="w-100" type="text" placeholder="ایمیل" name="email">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                </select>
+<!--                                 <label for="email" class="form-label"><b>ایمیل</b></label>-->                            </div>
+                            <div class="form-group col-6">
+                                <input class="w-100" type="text" placeholder="کلید API را نامگذاری کنید" name="email">
+                                <label for="email" class="form-label">کلید API را نامگذاری کنید</label>
+                            </div>
+                            <div class="col-6 mobile-div-100">
+                                <div class="rounded w-100 bg-primary text-center py-2 my-1">
+                                    <a class="text-white">ساختن کلید</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account-sec my-2">
+                            <h5 class="mb-2">َAPI کلید لیست و دسترسی</h5>
+                            <p class="txt-color">یک کلید API یک رشته رمزگذاری شده ساده است که یک برنامه را بدون هیچ گونه اصلی شناسایی می کند. آنها برای دسترسی به داده های عمومی به صورت ناشناس مفید هستند و برای مرتبط کردن درخواست های API با پروژه شما برای سهمیه و صورتحساب استفاده می شوند.</p>
+                            <div class="api-sec-list my-2">
+                                <div class="d-flex">
+                                    <p class="fs-20 mx-1">کلید سرور 1</p>
+                                    <p class="color-primary mx-1 bg-color-primary rounded px-1 fs-12 d-flex justify-content-center align-items-center">دسترسی کامل</p>
+                                </div>
+                                <div>
+                                    <span>23eaf7f0-f4f7-495e-8b86-fad3261282ac</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" tag="i" class="v-icon notranslate v-theme--light cursor-pointer iconify iconify--bx" width="18" height="18" viewBox="0 0 24 24" style="font-size: 18px; height: 18px; width: 18px;"><path fill="currentColor" d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path></svg>
+                                </div>
+                                <span>Created on 28 Apr 2021, 18:20 GTM+4:10</span>
+                            </div>
+                            <div class="api-sec-list my-2">
+                                <div class="d-flex">
+                                    <p class="fs-20 mx-1">کلید سرور 2</p>
+                                    <p class="color-primary mx-1 bg-color-primary rounded px-1 fs-12 d-flex justify-content-center align-items-center">فقط خوندن</p>
+                                </div>
+                                <div>
+                                    <span>bb98e571-a2e2-4de8-90a9-2e231b5e99</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" tag="i" class="v-icon notranslate v-theme--light cursor-pointer iconify iconify--bx" width="18" height="18" viewBox="0 0 24 24" style="font-size: 18px; height: 18px; width: 18px;"><path fill="currentColor" d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path></svg>
+                                </div>
+                                <span>Created on 12 Feb 2021, 10:30 GTM+2:30</span>
+                            </div>
+                            <div class="api-sec-list my-2">
+                                <div class="d-flex">
+                                    <p class="fs-20 mx-1">کلید سرور 3</p>
+                                    <p class="color-primary mx-1 bg-color-primary rounded px-1 fs-12 d-flex justify-content-center align-items-center">دسترسی کامل</p>
+                                </div>
+                                <div>
+                                    <span>2e915e59-3105-47f2-8838-6e46bf83b711</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" tag="i" class="v-icon notranslate v-theme--light cursor-pointer iconify iconify--bx" width="18" height="18" viewBox="0 0 24 24" style="font-size: 18px; height: 18px; width: 18px;"><path fill="currentColor" d="M20 2H10c-1.103 0-2 .897-2 2v4H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2v-4h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM4 20V10h10l.002 10H4zm16-6h-4v-4c0-1.103-.897-2-2-2h-4V4h10v10z"></path></svg>
+                                </div>
+                                <span>Created on 28 Dec 2020, 12:21 GTM+4:10</span>
+                            </div>
+                        </div>
+                        <div class="account-sec my-2">
+                            <h5>دستگاه های اخیر</h5>
+                        </div>
                     </div>
                     <div id="notification" class="non-active-div">
                         dvdv
