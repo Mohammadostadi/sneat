@@ -1,18 +1,24 @@
 
+    
+    @import 'base/font';
+    @import 'base/variables';
+    @import 'base/global';
+    
+
+    @import 'components/form';
+    @import 'components/icon';
+    @import 'components/table'; 
+    @import 'components/typography';
+
+    
+    
     @import 'pages/404-page';
-    @import 'pages/form';
-    @import 'pages/icon';
     @import 'pages/login';
-    @import 'pages/typography';
-    @import 'pages/table'; 
     @import 'pages/card';
     @import 'pages/dashboard';   
     @import 'pages/account';  
     
     
-    @import 'base/font';
-    @import 'base/variables';
-    @import 'base/global';
 
 
 

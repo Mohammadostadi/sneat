@@ -1,20 +1,19 @@
-@import 'variables';
 
 
-@each $size in $font-size{
+@each $size in $fs{
     .fs-#{$size}{
         font-size: #{$size}px;
     }
 }
 
 
-@each $size in $font-weight{
+@each $size in $fw{
     .fw-#{$size}{
         font-weight: $size;
     }
 }
 
-
+//???????????????????????????????????????????????
 @mixin theme(){
     padding: 1rem 1.5rem;
     box-shadow: $box-shadow;
@@ -125,7 +124,7 @@ ul{
     @mixin link(){
         a{
             padding: .5rem;
-            transition: all.5s;
+            transition: all .5s;
             border-radius: 10px;
             
         }
@@ -135,7 +134,13 @@ ul{
     }
 
 
-    
+    .circle-hover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
 
 
 #nav-menu{
