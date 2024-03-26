@@ -1,0 +1,15 @@
+@import '../base/variables';
+@import '../base/global';
+.heading-sec{
+    display: flex;
+    flex-direction: column;
+    @include theme();
+    margin: 1rem 1.5rem;
+    div p{
+        color: $clr-grayish-blue;
+    }
+}
+.txt-sec{
+    margin: 1rem 1.5rem;
+    @include theme();
+}

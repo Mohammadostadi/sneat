@@ -1,8 +1,4 @@
-$box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-$clr-table-bg: rgb(12, 12, 47);
-$clr-table: rgb(186, 186, 197);
-$clr-pink: rgb(212, 0, 255);
-
+@import '../base/variables';
 .table-sec{
     div{
         padding: 1rem 1.5rem;

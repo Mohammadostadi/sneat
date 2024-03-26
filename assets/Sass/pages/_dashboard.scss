@@ -1,39 +1,4 @@
-$clr-white: rgb(252, 252, 252);
-$clr-primary: rgb(105, 108, 255);
-$clr-dark: rgb(0, 0, 0);
-$clr-green: rgb(113, 221, 55);
-$clr-bg-green: rgba(113, 221, 55, 0.365);
-$clr-little-blue: rgba(3, 193, 236, 0.266);
-$clr-primary-bg: rgba(105, 108, 255, .16);
-$clr-gray-solid: rgba(133, 146, 163, 0.352);
-$box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-$font-bold:'iranian-sans-bold', 'yekan-bold';
-$clr-gray: hsla(0, 0%, 85%, 0.724);
-
-@mixin theme(){
-    box-shadow: $box-shadow;
-    width: 100%;
-    border-radius: 10px;
-    /* padding: 1rem; */
-}
-
-.color-primary{
-    color: $clr-primary !important;
-}
-.bg-gray{
-    background-color: $clr-gray-solid;
-}
-.bg-green{
-    background-color: $clr-bg-green;
-}
-.bg-color-little-blue{
-    background-color: $clr-little-blue;
-}
-
-.txt-color{
-    color: $clr-grayish-blue;
-}
-
+@import '../base/variables';
 .dashboard-sec{
     padding: 1rem 1.5rem;
 }

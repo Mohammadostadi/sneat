@@ -1,7 +1,4 @@
-$clr-gray: hsla(240, 6%, 10%, 0.693);
-$clr-white: rgb(252, 252, 252);
-$clr-primary: rgb(105, 108, 255);
-
+@import '../base/variables';
 .main-page{
     display: flex;
     justify-content: center;
@@ -15,11 +12,6 @@ $clr-primary: rgb(105, 108, 255);
     justify-content: center;
 }
 
-.image-css{
-    aspect-ratio: 1 !important;
-    object-fit: cover !important;
-    transition: 1s all;
-}
 .div-text{
     color: $clr-gray;
     h1{

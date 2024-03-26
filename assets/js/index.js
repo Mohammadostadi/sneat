@@ -79,6 +79,62 @@ var account = document.getElementById('account');
     linkNotification.classList.remove('non-active-link');
   }
 
+
+
+  var income = document.getElementById('income');
+  var incomeLink = document.getElementById('income-link');
+  var expense = document.getElementById('expense');
+  var expenseLink = document.getElementById('expense-link');
+  var profit = document.getElementById('profit');
+  var profitLink = document.getElementById('profit-link');
+
+
+  function showIncome(){
+    income.classList.add('active-div');
+    expense.classList.add('non-active-div');
+    profit.classList.add('non-active-div');
+    incomeLink.classList.add('active-link-index');
+    expenseLink.classList.add('non-active-link-index');
+    profitLink.classList.add('non-active-link-index');
+    income.classList.remove('non-active-div');
+    expense.classList.remove('active-div');
+    profit.classList.remove('active-div');
+    incomeLink.classList.remove('non-active-link-index');
+    expenseLink.classList.remove('active-link-index');
+    profitLink.classList.remove('active-link-index');
+  }
+
+
+  function showExpense(){
+    income.classList.add('non-active-div');
+    expense.classList.add('active-div');
+    profit.classList.add('non-active-div');
+    incomeLink.classList.add('non-active-link-index');
+    expenseLink.classList.add('active-link-index');
+    profitLink.classList.add('non-active-link-index');
+    income.classList.remove('active-div');
+    expense.classList.remove('non-active-div');
+    profit.classList.remove('active-div');
+    incomeLink.classList.remove('active-link-index');
+    expenseLink.classList.remove('non-active-link-index');
+    profitLink.classList.remove('active-link-index');
+  }
+
+
+  function showProfit(){
+    income.classList.add('non-active-div');
+    expense.classList.add('non-active-div');
+    profit.classList.add('active-div');
+    incomeLink.classList.add('non-active-link-index');
+    expenseLink.classList.add('non-active-link-index');
+    profitLink.classList.add('active-link-index');
+    income.classList.remove('active-div');
+    expense.classList.remove('active-div');
+    profit.classList.remove('non-active-div');
+    incomeLink.classList.remove('active-link-index');
+    expenseLink.classList.remove('active-link-index');
+    profitLink.classList.remove('non-active-link-index');
+  }
   
 
 
@@ -191,4 +247,9 @@ var options = {
   }) */
 
 
+
+
+
+
+  
   

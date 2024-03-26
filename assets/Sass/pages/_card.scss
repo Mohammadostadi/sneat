@@ -1,60 +1,15 @@
-$clr-gray: hsla(0, 0%, 85%, 0.724);
-$clr-grayish-blue: hsl(221, 10%, 64%);
-$clr-white: rgb(252, 252, 252);
-$clr-primary: rgb(105, 108, 255);
-$clr-bg-primary: rgba(191, 192, 254, 0.57);
-$clr-bg-gray: rgba(227, 231, 236, 0.813);
-$clr-face-book: rgb(59, 89, 152);
-$clr-linkedin: rgb(0, 123, 182);
-$clr-twitter: rgb(22, 177, 255);
-/* $clr-dark: rgb(0, 0, 0); */
-$box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-$font-bold:'iranian-sans-bold', 'yekan-bold';
-@mixin theme(){
-    box-shadow: $box-shadow;
-    width: 100%;
-    border-radius: 10px;
-    /* padding: 1rem; */
-}
+@import '../base/variables';
 
-@mixin link(){
-    a{
-        padding: .5rem;
-        transition: all.5s;
-        border-radius: 10px;
-        
-    }
-    a:hover{
-        background-color: $clr-gray;
-    }
-}
+$clr-bg-linkedin: rgb(0, 123, 182);
+$clr-bg-face-book: rgb(59, 89, 152);
+$clr-bg-twitter: rgb(22, 177, 255);
 
-.bg-color-gray{
-    background-color: $clr-bg-gray;
-}
-.bg-color-primary{
-    background-color: $clr-bg-primary;
-}
-
-/* .txt-dark{
-    color: $clr-dark;
-} */
-.color-white{
-    color: $clr-white !important;
-}
-.bg-primary{
-    background-color: $clr-primary !important;
-}
-.basic-card-sec{
-    padding: 1rem 1.5rem;
-}
-.txt-color{
-    color: $clr-grayish-blue;
-}
 .influencer-div{
+    padding: 0 !important;
     @include theme();
 }
 .robert-meyer-div{
+    padding: 0 !important;
     @include theme();
     a{
         padding: .5rem;
@@ -114,12 +69,14 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 }
 
 .fav-user-div{
+    padding: 0 !important;
     @include theme();
 
     @include link();
 }
 
 .iphone-div{
+    padding: 0 !important;
     @include theme();
     display: flex;
 }
@@ -136,6 +93,7 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 
 
 .roaster-div{
+    padding: 0 !important;
     @include theme();
     display: flex;
     div div {
@@ -155,6 +113,7 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 }
 
 .apple-watch-div{
+    padding: 0 !important;
     @include theme();
 }
 
@@ -169,6 +128,7 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 }
 
 .lifetime-div{
+    padding: 0 !important;
     @include theme();
     display: flex;
 }
@@ -229,15 +189,15 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
 }
 .twitter-card /* + .face-book-card + .linkedin-card */{
     @include solidCard();
-    background-color: $clr-twitter;
+    background-color: $clr-bg-twitter;
 }
 .face-book-card{
     @include solidCard();
-    background-color: $clr-face-book;
+    background-color: $clr-bg-face-book;
 }
 .linkedin-card{
     @include solidCard();
-    background-color: $clr-linkedin;
+    background-color: $clr-bg-linkedin;
 }
 
 /* .iphone-empty-div::after{
@@ -358,117 +318,117 @@ $font-bold:'iranian-sans-bold', 'yekan-bold';
     border-radius: 12px 12px 0px 0px;
     overflow: hidden;
   } */
-  .content input[type="radio"] {
-    display: none;
-  }
-  
-  #like:checked ~ nav .like,
-  #star:checked ~ nav .star,
-  #setting:checked ~ nav .setting {
-    color: $clr-primary;
-    border-radius: 10px 10px 0 0;
-    padding: .5rem 1rem;
-    margin: .5rem;
-    border-bottom: 1px solid $clr-primary;
-    transition-property: all;
-    transition-duration: .28s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-  }
-  #like:checked ~ nav .like,
-  #star:checked ~ nav .star,
-  #setting:checked ~ nav .setting:hover {
-    background: $clr-primary-bg;
-  }
-  .txt-content .txt {
-    display: none;
-  }
-  .txt-content .home {
-    display: block;
-  }
-  
-  #like:checked ~ .txt-content .like,
-  #star:checked ~ .txt-content .star,
-  #setting:checked ~ .txt-content .setting {
-    display: block;
-  }
-  
-  #star:checked ~ .txt-content .like,
-  #setting:checked ~ .txt-content .like {
-    display: none;
-  }
-  .txt-content {
-    padding: 1.3rem;
-    border-top: 1px solid $clr-gray;
-    a{
-        padding: .5rem;
-        color: $clr-white;
-        background-color: $clr-primary;
-        border-radius: 10px;
+    .content input[type="radio"] {
+        display: none;
     }
-  }
-  .txt-content .title {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  .content{
-    @include theme();
-  }
+    
+    #like:checked ~ nav .like,
+    #star:checked ~ nav .star,
+    #setting:checked ~ nav .setting {
+        color: $clr-primary;
+        border-radius: 10px 10px 0 0;
+        padding: .5rem 1rem;
+        margin: .5rem;
+        border-bottom: 1px solid $clr-primary;
+        transition-property: all;
+        transition-duration: .28s;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+    }
+    #like:checked ~ nav .like,
+    #star:checked ~ nav .star,
+    #setting:checked ~ nav .setting:hover {
+        background: $clr-primary-bg;
+    }
+    .txt-content .txt {
+        display: none;
+    }
+    .txt-content .home {
+        display: block;
+    }
+    
+    #like:checked ~ .txt-content .like,
+    #star:checked ~ .txt-content .star,
+    #setting:checked ~ .txt-content .setting {
+        display: block;
+    }
+    
+    #star:checked ~ .txt-content .like,
+    #setting:checked ~ .txt-content .like {
+        display: none;
+    }
+    .txt-content {
+        padding: 1.3rem;
+        border-top: 1px solid $clr-gray;
+        a{
+            padding: .5rem;
+            color: $clr-white;
+            background-color: $clr-primary;
+            border-radius: 10px;
+        }
+    }
+    .txt-content .title {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .content{
+        @include theme();
+    }
 
-  .content1 input[name="indiacator1"] {
-    display: none;
-  }
-  
-  #like1:checked ~ nav .like1,
-  #star1:checked ~ nav .star1,
-  #setting1:checked ~ nav .setting1 {
-    color: $clr-primary;
-    border-radius: 10px 10px 0 0;
-    padding: .5rem 1rem;
-    margin: .5rem;
-    border-bottom: 1px solid $clr-primary;
-    transition-property: all;
-    transition-duration: .28s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-  }
-  #like1:checked ~ nav .like1,
-  #star1:checked ~ nav .star1,
-  #setting1:checked ~ nav .setting1:hover {
-    background: $clr-primary-bg;
-  }
-  .txt-content1 .txt1 {
-    display: none;
-  }
-  .txt-content1 .home1 {
-    display: block;
-  }
-  
-  #like1:checked ~ .txt-content1 .like1,
-  #star1:checked ~ .txt-content1 .star1,
-  #setting1:checked ~ .txt-content1 .setting1 {
-    display: block;
-  }
-  
-  #star1:checked ~ .txt-content1 .like1,
-  #setting1:checked ~ .txt-content1 .like1 {
-    display: none;
-  }
-  .txt-content1 {
-    padding: 1.3rem;
-    border-top: 1px solid $clr-gray;
-    a{
-        padding: .5rem;
-        color: $clr-white;
-        background-color: $clr-primary;
-        border-radius: 10px;
+    .content1 input[name="indiacator1"] {
+        display: none;
     }
-  }
-  .txt-content1 .title1 {
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  .content1{
-    @include theme();
-    text-align: center;
-  }
+    
+    #like1:checked ~ nav .like1,
+    #star1:checked ~ nav .star1,
+    #setting1:checked ~ nav .setting1 {
+        color: $clr-primary;
+        border-radius: 10px 10px 0 0;
+        padding: .5rem 1rem;
+        margin: .5rem;
+        border-bottom: 1px solid $clr-primary;
+        transition-property: all;
+        transition-duration: .28s;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+    }
+    #like1:checked ~ nav .like1,
+    #star1:checked ~ nav .star1,
+    #setting1:checked ~ nav .setting1:hover {
+        background: $clr-primary-bg;
+    }
+    .txt-content1 .txt1 {
+        display: none;
+    }
+    .txt-content1 .home1 {
+        display: block;
+    }
+    
+    #like1:checked ~ .txt-content1 .like1,
+    #star1:checked ~ .txt-content1 .star1,
+    #setting1:checked ~ .txt-content1 .setting1 {
+        display: block;
+    }
+    
+    #star1:checked ~ .txt-content1 .like1,
+    #setting1:checked ~ .txt-content1 .like1 {
+        display: none;
+    }
+    .txt-content1 {
+        padding: 1.3rem;
+        border-top: 1px solid $clr-gray;
+        a{
+            padding: .5rem;
+            color: $clr-white;
+            background-color: $clr-primary;
+            border-radius: 10px;
+        }
+    }
+    .txt-content1 .title1 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .content1{
+        @include theme();
+        text-align: center;
+    }

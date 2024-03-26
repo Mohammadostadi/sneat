@@ -1,6 +1,4 @@
-$clr-grayish-blue: hsl(221, 10%, 64%);
-$clr-white: rgb(252, 252, 252);
-$clr-primary: rgb(105, 108, 255);
+@import '../base/variables';
 .main-sec-icon{
     /* overflow-y: scroll;
     overflow-x: hidden; */

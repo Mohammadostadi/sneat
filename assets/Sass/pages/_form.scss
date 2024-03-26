@@ -1,10 +1,4 @@
-$box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-$clr-grayish-blue: hsl(216, 14%, 85%);
-$clr-white: rgb(252, 252, 252);
-$clr-primary: rgb(105, 108, 255);
-$clr-gray: hsl(240, 4%, 36%);
-
-
+@import '../base/variables';
 .form-sec{
     margin: 1rem 1.5rem;
     /* padding: 1rem 1.5rem; */
@@ -30,8 +24,7 @@ input:focus{
     background-color: $clr-primary;
     cursor: pointer;
 }
-.reset{
-    color: $clr-gray;
+.reset{ 
     background-color: $clr-grayish-blue;
 }
 
