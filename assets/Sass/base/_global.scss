@@ -186,11 +186,11 @@ ul{
     content: "";
     position: absolute;
     display: block;
-    width: 20px;
-    height: 2px;
+    width: 22px;
+    height: 3px;
     rotate: 90deg;
     background-color: $clr-primary;
-    top:19px;
+    top:25px;
     left:-17px;
     border-radius: 10px;
     transition: all .5s;
@@ -303,7 +303,7 @@ ul{
     
     
     .price-sec{
-    @include theme();
+    @include secStyle();
     padding: 1rem 1.5rem;
     }
     

@@ -327,14 +327,17 @@ $clr-bg-twitter: rgb(22, 177, 255);
         color: $clr-primary;
         border-radius: 10px 10px 0 0;
         padding: .5rem 1rem;
-        margin: .5rem;
         border-bottom: 1px solid $clr-primary;
         transition-property: all;
         transition-duration: .28s;
         transition-timing-function: cubic-bezier(.4,0,.2,1);
     }
-    #like:checked ~ nav .like,
-    #star:checked ~ nav .star,
+    #like:checked ~ nav .like:hover{
+        background: $clr-primary-bg;
+    }
+    #star:checked ~ nav .star:hover{
+        background: $clr-primary-bg;
+    }
     #setting:checked ~ nav .setting:hover {
         background: $clr-primary-bg;
     }
@@ -384,14 +387,17 @@ $clr-bg-twitter: rgb(22, 177, 255);
         color: $clr-primary;
         border-radius: 10px 10px 0 0;
         padding: .5rem 1rem;
-        margin: .5rem;
         border-bottom: 1px solid $clr-primary;
         transition-property: all;
         transition-duration: .28s;
         transition-timing-function: cubic-bezier(.4,0,.2,1);
     }
-    #like1:checked ~ nav .like1,
-    #star1:checked ~ nav .star1,
+    #like1:checked ~ nav .like1:hover{
+        background: $clr-primary-bg;
+    }
+    #star1:checked ~ nav .star1:hover{
+        background: $clr-primary-bg;
+    }
     #setting1:checked ~ nav .setting1:hover {
         background: $clr-primary-bg;
     }
