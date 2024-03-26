@@ -5,11 +5,11 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 .influencer-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
 }
 .robert-meyer-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
     a{
         padding: .5rem;
         color: $clr-white;
@@ -69,14 +69,14 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 .fav-user-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
 
     @include link();
 }
 
 .iphone-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
     display: flex;
 }
 
@@ -93,7 +93,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 .roaster-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
     display: flex;
     div div {
         @include link();
@@ -102,7 +102,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 
 .influencer--main-txt-div{
-    @include theme();
+    @include secStyle();
     padding: 1rem 1.5rem;
     @include link();
 }
@@ -113,7 +113,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 .apple-watch-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
 }
 
 .link-border-apple-watch{
@@ -128,7 +128,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 .lifetime-div{
     padding: 0 !important;
-    @include theme();
+    @include secStyle();
     display: flex;
 }
 
@@ -143,7 +143,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 
 .best-answer-div{
-    @include theme();
+    @include secStyle();
     padding: 1rem 1.5rem;
     div {
         @include link();
@@ -152,7 +152,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 
 
 .support-div{
-    @include theme();
+    @include secStyle();
     padding: 1rem 1.5rem;
     a{
         padding: .5rem 1rem;
@@ -177,7 +177,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
 }
 
 .solid-card-div{
-    @include theme();
+    @include secStyle();
 }
 
 @mixin solidCard(){
@@ -371,7 +371,7 @@ $clr-bg-twitter: rgb(22, 177, 255);
         margin-bottom: 10px;
     }
     .content{
-        @include theme();
+        @include secStyle();
     }
 
     .content1 input[name="indiacator1"] {
@@ -428,6 +428,6 @@ $clr-bg-twitter: rgb(22, 177, 255);
         margin-bottom: 10px;
     }
     .content1{
-        @include theme();
+        @include secStyle();
         text-align: center;
     }

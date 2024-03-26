@@ -136,8 +136,11 @@ var account = document.getElementById('account');
     profitLink.classList.remove('non-active-link-index');
   }
   
-
-
+  /* const toggle = () => document.querySelectorAll('#labels > div')
+  .forEach(label => label.classList.toggle('border-link-div'));
+ */
+/* document.querySelector('#deleteAccount').addEventListener('change', toggle);
+ */
 
 document.addEventListener('DOMContentLoaded', function (){
     const chart = Highcharts.chart('chart', {
@@ -249,7 +252,13 @@ var options = {
 
 
 
-
+  $('#deleteAccount').change(function(){
+    if($(this).is(":checked")) {
+        $('.changeme').addClass('opacity-100');
+    } else {
+        $('.changeme').removeClass('opacity-100');
+    }
+});
 
   
   

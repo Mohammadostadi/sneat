@@ -1,7 +1,7 @@
-@import '../base/variables';
+
 
 .account-sec{
-    @include theme();
+    @include secStyle();
 }
 
 

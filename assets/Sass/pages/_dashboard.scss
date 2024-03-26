@@ -3,7 +3,7 @@
     padding: 1rem 1.5rem;
 }
 .john-dash-div{
-    @include theme();
+    @include secStyle();
     h3{
         color: $clr-primary;
     }
@@ -20,7 +20,7 @@
 
 
 .charts-div{
-    @include theme();  
+    @include secStyle();  
     div{
         border-radius: 0 10px 10px 0;
     }
@@ -31,24 +31,24 @@
 }
 
 .profit-div{
-    @include theme();
+    @include secStyle();
 }
 
 .payment-div{
-    @include theme();
+    @include secStyle();
 }
 
 .sale-div{
-    @include theme();
+    @include secStyle();
 }
 
 .transaction-div{
-    @include theme();
+    @include secStyle();
 }
 
 
 .profile-report-div{
-    @include theme();
+    @include secStyle();
     display: flex;
     justify-content: space-around;
 }
@@ -60,12 +60,12 @@
 
 
 .order-report-div{
-    @include theme();
+    @include secStyle();
     padding: 1rem 1.5rem;
 }
 
 .transactions-div{
-    @include theme();
+    @include secStyle();
     padding: 1rem 1.5rem;
 }
 
