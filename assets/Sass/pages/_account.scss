@@ -23,6 +23,17 @@
     background-color: $clr-bg-gray;
 }
 
+.border-top-table{
+    tr{
+        margin: 2rem 0;
+        border-top: 1px solid;
+    }
+}
+#notification{
+    @include secStyle();
+    display: flex;
+    flex-direction: column;
+}
 @media(max-width: 512px){
     .border-link-div{
         a{

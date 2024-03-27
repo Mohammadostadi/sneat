@@ -154,6 +154,8 @@ ul{
         position: fixed;
         height: 100%;
         overflow: auto;
+        font-weight: 600;
+
     }
     ul li{
         padding: .5rem 1rem;
@@ -171,6 +173,8 @@ ul{
     } */
     
     .icon-menu-primary-color {
+        font-weight: 700;
+        font-size: 2rem;
     svg path{
         color: $clr-primary;
     }
